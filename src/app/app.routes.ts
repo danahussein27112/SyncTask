@@ -9,9 +9,10 @@ import { AddProductComponent } from './components/product/add-product/add-produc
 export const routes: Routes = [
   { path: 'products', component: ProductListComponent, canActivate: [AuthGuard] },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '', component: LoginPageComponent },
   { path: 'login', component: LoginPageComponent },
   { path: 'reg', component: RegComponent },
-  { path: 'add', component:AddProductComponent}
+  { path: 'add', component: AddProductComponent }
 ];
 
 @NgModule({
